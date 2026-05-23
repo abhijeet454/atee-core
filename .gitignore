@@ -1,0 +1,87 @@
+# ── Environment & secrets ─────────────────────────────────────
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# ── Backend runtime data ────────────────────────────────────────
+backend/venv/
+backend/.env
+backend/data/*.db
+backend/data/*.sqlite3
+backend/data/faiss_index/*
+!backend/data/faiss_index/.gitkeep
+backend/data/voices/*
+!backend/data/voices/.gitkeep
+backend/logs/
+!backend/data/.gitkeep
+
+# ── Node / Frontend ─────────────────────────────────────────────
+node_modules/
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.vercel
+*.tsbuildinfo
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# ── IDE & OS ────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.iml
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ── Archives & temp ─────────────────────────────────────────────
+*.log
+*.bak
+*.tmp
+*.swp
+*.swo
+*.orig
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.rar
+
+# ── Local / generated artifacts ─────────────────────────────────
+*.docx
+*.wav
+*.mp3
+*.pkl
+*.faiss
+
+# Cursor / agent local files (not part of the product)
+.cursor/
+AGENTS.md
+CLAUDE.md
