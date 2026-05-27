@@ -23,13 +23,24 @@ class Complexity(str, Enum):
     COMPLEX = "complex"
 
 
-# Keywords / patterns that suggest a complex query
+# Keywords / patterns that suggest a complex query (expanded; includes Hindi/Hinglish)
 _COMPLEX_SIGNALS = [
-    "explain", "analyze", "compare", "debate", "write an essay",
-    "step by step", "in detail", "pros and cons", "trade-offs",
-    "implement", "design", "architect", "refactor", "debug",
-    "summarize this document", "create a plan", "help me think",
-    "what are the implications", "how would you approach",
+    "explain", "analyze", "evaluate", "compare", "debate", "write an essay",
+    "step by step", "step-by-step", "in detail", "pros and cons", "trade-offs",
+    "trade offs", "implement", "implementation", "design", "architect",
+    "refactor", "debug", "optimize", "evaluate trade-offs", "prove", "derive",
+    "simulate", "case study", "business plan", "product roadmap", "research",
+    "proposal", "feasibility", "benchmark", "summarize this document", "summarize",
+    "create a plan", "plan", "help me think", "what are the implications",
+    "what would be the implications", "how would you approach", "suggest a strategy",
+    "critique", "critical analysis", "walk me through", "step through",
+    # Hindi / Hinglish (Devanagari + romanized) signals
+    "समझाइए", "विवरण में", "विस्तार से", "विस्तार से बताइए", "तुलना करें", "विश्लेषण करें",
+    "योजना बनाइए", "योजना बनाओ", "कैसे करें", "कैसे करूँ", "कैसे करोगे", "कृपया विस्तार से बताइए",
+    "परिणाम क्या होंगे", "क्या नतीजे होंगे", "प्रभाव क्या होंगे", "डिज़ाइन करें", "इम्प्लिमेंट करें",
+    "implement karo", "design karo", "compare karo", "analyze karo",
+    "step by step batao", "detail mein batao", "batayein in detail", "madad karo sochne mein",
+    "kaise approach karoge", "kya implications hain", "plan banao", "create a plan batao",
 ]
 
 
