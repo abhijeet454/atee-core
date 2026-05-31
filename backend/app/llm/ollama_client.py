@@ -92,7 +92,7 @@ class OllamaClient:
                     "POST",
                     f"{self._base_url}/api/chat",
                     json=payload,
-                    timeout=120.0
+                    timeout=160.0
                 ) as response:
                     response.raise_for_status()
                     async for line in response.aiter_lines():
